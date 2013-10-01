@@ -20,9 +20,9 @@ $font-weight: normal;
 $line-height: 1.45;
 $font-size: 125; // 20px
 $font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
-$font-family: serif; // Non-font-face font-stack
+$font-family: sans-serif; // Non-font-face font-stack
 
-$custom-font-family: "Georgia"; // Custom font-face stack, if set will be added to the $font-family
+$custom-font-family: "PT Sans"; // Custom font-face stack, if set will be added to the $font-family
 
 
 // $Small Print
