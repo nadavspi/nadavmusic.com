@@ -12,16 +12,21 @@
 
     = javascript_include_tag 'vendor/modernizr-2.6.2.min'
     = stylesheet_link_tag 'site'
+
+
   %body
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
     %header
     .page= yield
     %footer
 
+    
+    = javascript_include_tag 'site'
     = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+
+
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\/script>')
-    = javascript_include_tag 'site'
 
     :javascript
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

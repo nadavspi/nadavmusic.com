@@ -10,12 +10,14 @@
 %header 
     %h1 Nadav Spiegelman
 
-%article.about 
-    %p Hi! I&rsquo;m a Jazz bass player and composer located in Atlanta, GA. I love to play music that feels good, and have been doing it professionally since 2007. I take the Jazz tradition seriously and my playing reflects the lineage of beautifully sounding, adventurous, swinging bass playing. 
-    %p I work as both a bandleader and a sideman, equally confident playing original music and the classics of the Jazz tradition and Great American Songbook. 
+%section.about 
+    %article.about__text
+        %p Hi! I&rsquo;m a Jazz bass player and composer located in Atlanta, GA. I love to play music that feels good, and have been doing it professionally since 2007. I take the Jazz tradition seriously and my playing reflects the lineage of beautifully sounding, adventurous, swinging bass playing. 
+        %p I work as both a bandleader and a sideman, equally confident playing original music and the classics of the Jazz tradition and Great American Songbook. 
 
-%section.call
-    %a{:href => "mailto:info@nadavmusic.com"} Get in touch
+    %img.about__image{:src => "images/nadav.jpg", :alt => "Nadav Spiegelman"}/ 
+
+    %a.button-contact{:href => "mailto:info@nadavmusic.com"} Get in touch
 
 %section
     %h1 Schedule
@@ -43,6 +45,8 @@
 %section.music 
     %h1 Music
 
+    =partial "music"
+
 %section.contact 
     %h1 Contact me
 
@@ -57,4 +61,17 @@
         <label for="Message">Message:</label>
         <textarea name="Message"id="Message"></textarea>
         <input type="submit" name="submit" value="Submit">
+
+:javascript
+     $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+       ready: function () {
+        $(this).jPlayer("setMedia", {
+         mp3: "/media/Pursuance.mp3"
+        });
+       },
+       swfPath: "http://jplayer.org/latest/js",
+       supplied: "mp3"
+      });
+     });
 
