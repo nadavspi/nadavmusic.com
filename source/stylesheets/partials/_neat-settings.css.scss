@@ -6,8 +6,6 @@ $gutter: golden-ratio(1em, 1); // 30px
 $grid-columns: 4;
 $max-width: em(760); 
 
-$medium: new-breakpoint(min-width em(980) 8);
-
 $large: new-breakpoint(min-width em(980) 12);
 
 // Border-box-sizing
