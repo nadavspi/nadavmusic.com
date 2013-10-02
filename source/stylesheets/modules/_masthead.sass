@@ -1,16 +1,21 @@
 .masthead
-    padding-bottom: 2em
+    padding: 3em 0
+    background-color: #efefe0
     +media($large)
-        padding-bottom: 4em
+        // padding-bottom: 3em
 
 .masthead__title
     font-size: 1.6rem
+    color: $red
     margin-bottom: 0
     text-align: center
     text-transform: uppercase
+    font-family: "futura-pt",sans-serif
     +media($large)
         font-size: 2rem
 
 .masthead__nav
     @extend %nav
     font-size: 0.8rem
+    a
+        color: $purple
