@@ -14,6 +14,9 @@
 
 .about__text
     @extend %container-padding
+    +media($medium)
+        max-width: em(445)
+        margin: 0 auto
     +media($large)
-        max-width: em(465)
+        max-width: em(480)
         margin: 0 auto
