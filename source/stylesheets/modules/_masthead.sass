@@ -1,8 +1,9 @@
 .masthead
     padding: 3em 0
-    background-color: #efefe0
+    background-color: #f8f5f0
+    border-bottom: 1px solid darken(#f8f5f0,5%)
     +media($large)
-        // padding-bottom: 3em
+        margin-bottom: 1.5em
 
 .masthead__title
     font-size: 1.6rem
@@ -14,8 +15,4 @@
     +media($large)
         font-size: 2rem
 
-.masthead__nav
-    @extend %nav
-    font-size: 0.8rem
-    a
-        color: $purple
+
