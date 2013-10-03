@@ -4,15 +4,20 @@
     padding: 0
     li
         display: inline
+    li + li
+        padding-left: 2.074rem
+        +media($medium)
+            padding-left: 1.611rem
     a
         display: inline-block
-        padding: 10px
         text-decoration: none
+
 
 .nav-main
     @extend %nav
+    padding-top: 1rem
     text-align: center
-    font-size: 0.932rem
+    font-size: 0.833rem
 
 
 
