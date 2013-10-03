@@ -4,7 +4,7 @@
 $column: golden-ratio(1em, 3); // 90px
 $gutter: golden-ratio(1em, 1); // 30px
 $grid-columns: 4;
-$max-width: em(800); 
+$max-width: em(600); 
 
 $medium: new-breakpoint(min-width em(600) 8);
 $large: new-breakpoint(min-width em(980) 12);
