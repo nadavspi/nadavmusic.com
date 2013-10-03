@@ -5,37 +5,37 @@
 / %img.about__image{:src => "images/nadav.jpg", :alt => "Nadav Spiegelman"}/ 
 
 
-%section
-    %h1 Schedule
+%section.schedule
+    %header.schedule__header
+        %h1 Schedule
 
-    %ul.schedule
-        %li 
-            %header 
-                %h4.schedule__date Friday, October 4
-                %h2.schedule__name Justin Varnes&rsquo; B&#8209;Sides Project
-            %article.schedule__details
-                %p 
-                    %a{:href => "http://thevelvetnote.com"} The Velvet Note
-                %p Alpharetta, GA
-                %p 7:30 and 9:30pm, $15
-        %li 
-            %header 
-                %h4.schedule__date Tuesday, November 5
-                %h2.schedule__name Nadav Spiegelman Trio
-            %article.schedule__details 
-                %p 
-                    %a{:href => "http://www.churchillgrounds.com/"} Churchill Grounds
-                %p Atlanta, GA
-                %p 9 and 11pm, $10
-        %li 
-            %header 
-                %h4.schedule__date Sunday, November 17
-                %h2.schedule__name Akeem Marable&rsquo;s <em>Dark Lake</em>
-            %article.schedule__details 
-                %p 
-                    %a{:href => "http://thevelvetnote.com"} The Velvet Note
-                %p Alpharetta, GA
-                %p 7:00 and 9:00pm, $15
+    %article.event
+        %header.event__date
+            %h2 Oct 4        
+        %section.event__details
+            %h2.event__name Justin Varnes&rsquo; B&#8209;Sides Project
+            %p.event__location
+                %a{:href => "http://thevelvetnote.com"} The Velvet Note
+            %p Alpharetta, GA
+            %p 7:30 and 9:30pm, $15
+    %article.event
+        %header 
+            %h2.event__date Nov 5  
+        %section.event__details 
+            %h2.event__name Nadav Spiegelman Trio
+            %p.event__location
+                %a{:href => "http://www.churchillgrounds.com/"} Churchill Grounds
+            %p Atlanta, GA
+            %p 9 and 11pm, $10
+    %article.event
+        %header 
+            %h2.event__date Nov 17
+        %section.event__details 
+            %h2.event__name Akeem Marable&rsquo;s <em>Dark Lake</em>
+            %p.event__location
+                %a{:href => "http://thevelvetnote.com"} The Velvet Note
+            %p Alpharetta, GA
+            %p 7:00 and 9:00pm, $15
 
 %section.music 
     %h1 Music
