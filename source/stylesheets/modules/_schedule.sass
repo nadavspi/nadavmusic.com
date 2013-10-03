@@ -1,15 +1,19 @@
 .schedule
-    list-style: none
+    @extend .section-margin--bottom
+.schedule__header
+    @extend .section-margin--bottom
 
-.schedule__date
-    margin-bottom: 0.5rem
-    font-style: italic
+.event
+    @extend .section-margin--bottom
 
-.schedule__name
-    margin-bottom: 0.5rem
-
-.schedule__details
+.event__details
+    padding-left: 2rem
     p
         margin: 0
-        padding-left: 2rem
+
+.event__name
+    margin-bottom: 0.833rem
+
+.event__location
+    @extend .smallcaps
 
