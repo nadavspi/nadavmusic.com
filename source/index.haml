@@ -1,8 +1,8 @@
+%section.music 
+    %h1 Music 
+    =partial "music"
 
-
-
-
-
+%img.image-main{:src => "images/nadav.jpg", :alt => "Nadav Spiegelman"}/ 
 
 %section.schedule
     %header.schedule__header
@@ -36,17 +36,8 @@
             %p Alpharetta, GA
             %p 7:00 and 9:00pm, $15
 
-
-%img.image-main{:src => "images/nadav.jpg", :alt => "Nadav Spiegelman"}/ 
-
-%section.music 
-    %h1 Music
-
-    =partial "music"
-
 %section.contact 
     %h1 Contact me
-
     %address 
         %p Phone: (770) 289-1798
         %p Email: <a href="mailto:info@nadavmusic.com">info@nadavmusic.com</a>
@@ -59,16 +50,5 @@
         <textarea name="Message"id="Message"></textarea>
         <input type="submit" name="submit" value="Submit">
 
-:javascript
-     $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-       ready: function () {
-        $(this).jPlayer("setMedia", {
-         mp3: "/media/Pursuance.mp3"
-        });
-       },
-       swfPath: "http://jplayer.org/latest/js",
-       supplied: "mp3"
-      });
-     });
+
 
