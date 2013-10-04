@@ -1,2 +1,38 @@
 .contact
     @extend %slice
+
+.contact__info
+    @extend .section-margin--bottom
+    p
+        margin: 0
+
+
+
+.contact__form
+    width: 100%
+
+.contact__form__field, .contact__form__submit
+    background-color: lighten(tint($blue,60%),8%)
+    outline: none
+    border: none
+    +placeholder 
+        color: #000
+
+.contact__form__field
+    padding: 10px
+
+.contact__form__submit
+    @extend .smallcaps
+    padding: 10px 25px
+    color: #fefefe
+    background-color: $blue
+    &:hover
+        background-color: $red
+
+
++media($medium)
+    .contact__info
+        +span-columns(3)
+    .contact__form
+        +span-columns(5)
+        +omega
