@@ -2,7 +2,23 @@
     @extend .pad-top
     @extend .margin-bottom
 
-.music__content
+.music__tracks
+    @extend .margin-bottom
     +media($medium)
         +span-columns(5)
-    
+ 
+.music__videos
+    clear: both
+
+.music__video
+    margin-bottom: 1rem
+    +media($large)
+        margin-bottom: 0
+    +media($large)
+        +span-columns(6)
+
+.music__image
+    // @extend .margin-bottom
+    +media($medium)
+        +span-columns(3)
+        +omega

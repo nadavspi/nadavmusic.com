@@ -1,6 +1,16 @@
 %section.music#music
     .wrapper
         %h1 Music 
-        .music__content
-            =partial "tracks"
-        %img.image-main{:src => "images/nadav.jpg", :alt => "Nadav Spiegelman"}/ 
+        =partial "tracks"
+        %figure.music__image
+            %img{:src => "images/nadav.jpg", :alt => "Nadav Spiegelman"}/ 
+        
+        %section.music__videos
+            %header
+                %h1.visuallyhidden Videos
+            .music__video
+                .fitvids
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/1EfUzrEI-48?rel=0" frameborder="0" allowfullscreen></iframe>
+            .music__video      
+                .fitvids
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/VAZPqN3zaBs?rel=0" frameborder="0" allowfullscreen></iframe>
