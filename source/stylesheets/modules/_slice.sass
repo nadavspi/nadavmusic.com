@@ -6,5 +6,12 @@
     // border-top: 1px solid darken($slice,7%)
     // border-bottom: 1px solid darken($slice,7%)
     
+%slice-border-top    
+    border-top: 1px solid darken($slice,7%)
 
+%slice-border-bottom
+    border-bottom: 1px solid darken($slice,7%)
     
+%slice-border
+    @extend %slice-border-top
+    @extend %slice-border-bottom
