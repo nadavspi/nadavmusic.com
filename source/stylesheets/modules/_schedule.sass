@@ -8,6 +8,7 @@
 
 .event
     @extend .section-margin--bottom
+    +row
 
 .event__details
     padding-left: 2rem
@@ -18,6 +19,30 @@
 
 .event__name
     margin-bottom: 0.833rem
+
+.event__personnel
+    ul
+        line-height: 1.3
+        list-style: none
+        padding-left: 0
+        font-size: 0.777rem
+        color: $slate
+        +media($medium)
+            margin: 0
+
++media($medium)
+    .event__location
+        +span-columns(5)
+    .event__personnel
+        +span-columns(3)
+        +omega
+
++media($large)
+    .event__location
+        +span-columns(7)
+    .event__personnel
+        +span-columns(5)
+        +omega
 
 
 
