@@ -8,7 +8,6 @@
         margin: 0
 
 .contact__form
-    width: 100%
     font-size: 0.8rem
 
 .contact__form__field, .contact__form__submit
@@ -17,6 +16,10 @@
     border: none
     +placeholder 
         color: $slate
+    width: 100%
+    +media($medium)
+        width: 50%
+
 
 .contact__form__field
     padding: 10px
@@ -28,6 +31,8 @@
     background-color: $orange
     &:hover
         background-color: $red
+    +media($medium)
+        width: 15%
 
 
 // +media($medium)
