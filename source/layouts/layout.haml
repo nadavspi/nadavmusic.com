@@ -24,11 +24,15 @@
     = partial "footer"
 
     
-    = javascript_include_tag 'site'
     = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
-
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\/script>')
+    = javascript_include_tag 'vendor/jquery.fitvids.js'
+
+    :javascript
+      $(document).ready(function(){
+        $(".fitvids").fitVids();
+        });
 
     :javascript
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
