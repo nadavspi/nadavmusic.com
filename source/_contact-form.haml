@@ -1,0 +1,9 @@
+%form.contact__form{:action => "contact.php", :method => "post"} 
+    %p 
+        <input type="text" name="name" id="Name" placeholder="Name" class="contact__form__field">
+    %p 
+        <input type="text" name="email" id="Email" placeholder="Email" class="contact__form__field">
+    %p 
+        <textarea name="message" id="Message" placeholder="Leave your questions or comments" rows="10" class="contact__form__field"></textarea>
+    %p 
+        <input type="submit" value="Send" class="contact__form__submit">
