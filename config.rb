@@ -9,6 +9,13 @@ activate :livereload
 
 activate :directory_indexes
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = "nadav.name"
+  deploy.path   = "/home/nadavspi/all_domains/nadavmusic.com"
+  deploy.user  = "nadavspi@nadav.name" 
+  deploy.clean = true
+end
 
 # Per-page layout changes:
 #
@@ -60,7 +67,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # require 'middleman-smusher'

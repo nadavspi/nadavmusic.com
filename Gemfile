@@ -7,3 +7,5 @@ gem 'middleman-livereload'
 
 gem 'bourbon'
 gem 'neat'
+
+gem "middleman-deploy"
