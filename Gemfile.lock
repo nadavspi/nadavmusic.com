@@ -120,6 +120,6 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
-  middleman (~> 3.0.14)
+  middleman
   middleman-livereload
   neat
