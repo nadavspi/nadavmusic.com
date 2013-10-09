@@ -15,6 +15,7 @@ activate :deploy do |deploy|
   deploy.path   = "/home/nadavspi/all_domains/nadavmusic.com"
   deploy.user  = "nadavspi@nadav.name" 
   deploy.clean = true
+  deploy.build_before = true
 end
 
 # Per-page layout changes:
